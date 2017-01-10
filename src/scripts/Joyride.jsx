@@ -242,7 +242,7 @@ class Joyride extends React.Component {
       }
     }
 
-    if (steps.length && !steps[nextState.index]) {
+    if (nextProps.run && nextSteps.length && index !== nextState.index && !nextStep) {
       this.triggerCallback({
         action: nextState.action,
         type: callbackTypes.FINISHED,
